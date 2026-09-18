@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Eden Luxury Theme Variables */
+    --eden-cream: #FAF8F5;
+    --eden-cream-pure: #FFFDF9;
+    --eden-beige-light: #F4EFE6;
+    --eden-beige: #ECE5D8;
+    --eden-beige-dark: #D8CDBC;
+    --eden-espresso: #241813;
+    --eden-espresso-dark: #170F0B;
+    --eden-espresso-light: #3D2B22;
+    --eden-brown: #795548;
+    --eden-brown-rich: #6D4329;
+    --eden-gold: #C5A880;
+    --eden-gold-light: #DFC8A8;
+    --eden-gold-dark: #A6875C;
+    --eden-text-primary: #241813;
+    --eden-text-secondary: #63534B;
+    --eden-text-muted: #96867B;
+    --eden-border: #E5DDCF;
+    --eden-border-light: #F0EAE1;
+    --eden-card-bg: #FFFFFF;
+  }
+
+  * {
+    border-color: var(--eden-border);
+  }
+
+  body {
+    background-color: var(--eden-cream);
+    color: var(--eden-text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom utility styles for luxury storefront */
+.bg-eden-cream { background-color: var(--eden-cream); }
+.bg-eden-cream-pure { background-color: var(--eden-cream-pure); }
+.bg-eden-beige-light { background-color: var(--eden-beige-light); }
+.bg-eden-beige { background-color: var(--eden-beige); }
+.bg-eden-espresso { background-color: var(--eden-espresso); }
+.bg-eden-espresso-dark { background-color: var(--eden-espresso-dark); }
+.bg-eden-espresso-light { background-color: var(--eden-espresso-light); }
+.bg-eden-gold { background-color: var(--eden-gold); }
+
+.text-eden-espresso { color: var(--eden-espresso); }
+.text-eden-espresso-dark { color: var(--eden-espresso-dark); }
+.text-eden-brown { color: var(--eden-brown); }
+.text-eden-brown-rich { color: var(--eden-brown-rich); }
+.text-eden-gold { color: var(--eden-gold); }
+.text-eden-gold-dark { color: var(--eden-gold-dark); }
+.text-eden-muted { color: var(--eden-text-muted); }
+.text-eden-secondary { color: var(--eden-text-secondary); }
+
+.border-eden-border { border-color: var(--eden-border); }
+.border-eden-border-light { border-color: var(--eden-border-light); }
+.border-eden-gold { border-color: var(--eden-gold); }
+.border-eden-espresso { border-color: var(--eden-espresso); }
+
+/* Custom Luxury Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F4EFE6;
+}
+::-webkit-scrollbar-thumb {
+  background: #C5A880;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A6875C;
+}
+
+/* Elegant transition for interactive elements */
+a, button, input, select, textarea {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Glassmorphic backdrop blur subtle effect */
+.luxury-blur {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
